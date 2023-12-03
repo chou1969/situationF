@@ -1,0 +1,147 @@
+.conteneur {
+  margin: 1px;
+  height: 99.5vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-template-rows: 1fr 1.5fr 8fr 0.5fr;
+  grid-template-areas:
+    "entete entete entete entete"
+    "recherche recherche recherche recherche"
+    "gauche corps corps droite"
+    "footer footer footer footer";
+  gap: 3px;
+  background-color: white;
+}
+
+.design1 {
+  grid-area: entete;
+}
+
+.design2 {
+  grid-area: recherche;
+}
+
+.design3 {
+  grid-area: corps;
+}
+
+.design4 {
+  grid-area: footer;
+}
+
+.design5 {
+  grid-area: gauche;
+}
+
+.design6 {
+  grid-area: droite;
+}
+.titrepers {
+  text-align: center;
+  border-bottom: 4px solid grey;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.pogo,
+.logo,
+.togo,
+.mogo,
+.fogo {
+  background-color: white;
+  color: black;
+  border: 2px solid rgb(43, 175, 158);
+  border-radius: 3%;
+  font-variant-caps: petite-caps;
+  font-size: 1em;
+  text-align: center;
+  padding-left: 20px;
+  padding-top: 2px;
+}
+
+.pogo:hover,
+.logo:hover,
+.togo:hover,
+.mogo:hover,
+.fogo:hover {
+  background-color: rgb(93, 192, 180);
+  color: white;
+  border-left: 5px solid #000000;
+  font-size: 1.2em;
+}
+b:hover {
+  color: yellow;
+}
+.cont {
+  background-size: contain;
+  width: 100%;
+  /* height: 97%; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  width: 100%;
+}
+thead {
+  table-layout: fixed;
+
+  height: 32px;
+}
+tbody {
+  table-layout: fixed;
+  border: 1px solid rgb(164, 158, 158);
+}
+#invisible {
+  visibility: hidden;
+  border: 1px solid white;
+  height: 1px;
+}
+
+td,
+th {
+  font-family: sans-serif;
+  font-variant-caps: small-caps;
+  font-size: 12px;
+  border: 1px solid rgb(164, 158, 158);
+  padding: 3px;
+}
+th {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#tabdetail {
+  width: 100%;
+}
+#tete {
+  height: 32px;
+}
+#tete,
+#corps {
+  display: block;
+  width: 100%;
+  overflow-y: auto;
+}
+#corps {
+  height: 16vh;
+}
+#tete {
+  background-color: white;
+  border: 6px solid rgb(93, 192, 180);
+  border-bottom: 1px solid grey;
+  border-radius: 5px 5px;
+}
+#corps tr:nth-child(even) {
+  background-color: rgb(218, 213, 213);
+  color: rgb(11, 94, 105);
+}
+#repertoire {
+  width: 90%;
+  height: 6vh;
+  border: 1px solid rgb(255, 252, 252);
+  border-radius: 5px;
+  margin: 12px auto;
+  text-align: center;
+  background-attachment: fixed;
+}
